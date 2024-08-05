@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Snake Game with Moving Foods</title>
+</head>
+<body>
+    <div id="welcomeScreen" class="upper-center">
+        <h1 class="welcome-title">Welcome to the Snake Game!</h1>
+        <button class="start-button" onclick="startGame()">Start Game</button>
+    </div>
+    <div id="gameWrapper" style="display:none;">
+        <div id="scores">
+            <div id="aiScore" class="score-left">AI Score: 0</div>
+            <div id="playerScore" class="score-right">Player Score: 0</div>
+        </div>
+        <div id="gameContainer">
+            <div id="title">Snake Game</div>
+            <canvas id="gameCanvas" width="704" height="704"></canvas>
+        </div>
+    </div>
+    
+    <script src="./Astar.js"></script>
+    <script src="./gameAlgo.js"></script>
+</body>
+</html>
+
